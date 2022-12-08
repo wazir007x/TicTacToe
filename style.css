@@ -1,0 +1,34 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+.ttt_board{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr ;
+    background-color: rgb(42, 130, 101);
+    width: 540px;
+    height: 540px;
+
+}
+.block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: cadetblue;
+    transform: scale(0.9);
+    cursor: pointer;
+}
+.symbol p{
+    
+    font-size: 6rem;
+    color: wheat;
+    padding: 0;
+    margin: 0;
+}
