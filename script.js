@@ -56,7 +56,7 @@ blocks.forEach((block, index) => {
 
 const winner = () => {
   if (board[0] != "" && board[0] == board[1] && board[0] == board[2]) {
-    line.style = `transform: translateY(-180px);`;
+    line.style = `top:16%`;
     return true;
   }
   if (board[3] != "" && board[3] == board[4] && board[3] == board[5]) {
@@ -64,13 +64,14 @@ const winner = () => {
     return true;
   }
   if (board[6] != "" && board[6] == board[7] && board[6] == board[8]) {
-    line.style = `transform: translateY(180px);`;
+    line.style = `top:84%`;
     return true;
   }
 
   if (board[0] != "" && board[0] == board[3] && board[0] == board[6]) {
     line.style = `
-    transform:translateX(-180px) rotate(90deg);
+    left:-66%;
+    transform:rotate(90deg);
      `;
     return true;
   }
@@ -81,7 +82,9 @@ const winner = () => {
   }
 
   if (board[2] != "" && board[2] == board[5] && board[2] == board[8]) {
-    line.style = `transform:translateX(180px) rotate(90deg);`;
+    line.style = `
+    right:-66%;
+    transform:rotate(90deg);`;
     return true;
   }
 
